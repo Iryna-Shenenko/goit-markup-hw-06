@@ -9,12 +9,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Шапка веб-сторінки -->
  <header class="page-header">
+    <div class="container">
+        <div class="page-header-nav">     
  <nav class="page-navigation">
     <a class="page-logo" href="./index.html">WEB<span class="text-color">Studio</span></a>
     <ul class="navigation-menu">
@@ -29,31 +33,39 @@
         </li>
     </ul>
  </nav>
- <address class="page-adress">
-    <ul class="page-adress-menu">
-        <li class="page-adress-menu-item">
-            <a class="page-adress-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <div class="age-header-address">  
+ <address class="page-address">
+    <ul class="page-address-menu">
+        <li class="page-address-menu-item">
+            <a class="page-address-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="page-adress-menu-item">
-            <a class="page-adress-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        <li class="page-address-menu-item">
+            <a class="page-address-menu-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
     </ul>
  </address>
+        </div>
+ </div>
  </header>
 
 <!-- ====HERO==== -->
 <main class="main-hero">
-    <section class="main-box-one">
+    
+    <section class="main-box-one">   
+        <div class="container">     
         <h1 class="main-title">Effective Solutions 
             for Your Business</h1>
         <button class="order-service" type="button">Order Service</button>
+        </div>
     </section>
-    
-    
-    <section class="main-box-two">
+
+<!-- box-two -->
+     <section class="main-box-two">
+        <div class="container">    
         <h2 class="maim-fearte">Feature</h2>
         <ul class="main-fearte-menu">
-            <li class="main-fearte-menu-item">
+            <li class="main-fearte-menu-item">  
                 <h3 class="fearte-title">Strategy</h3>
                 <p class="fearte-list-text">Our goal is to identify the business
                     problem to walk away with the perfect and creative solution.</p>
@@ -71,46 +83,61 @@
                 <p class="fearte-list-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
+        </div>
     </section>
-
-    <section class="main-box-three">
+<!-- box-three -->
+ 
+    <section class="main-box-three"> 
+    <div class="container">
         <h2 class="main-team">Our Team</h2>
     <ul class="main-team-menu">
         <li class="main-team-menu-item">
                     <img class="photo" src="./images/img1.jpg" 
                     alt="Mark Guerrero avatar" 
                     width="264">
+                    <div class="team-contaire">   
                     <h3 class="team-title">Mark Guerrero</h3>
                     <p class="team-list-text">Product Designer</p>
+                    </div>
         </li>
         <li class="main-team-menu-item">
                 <img class="photo" src="./images/img2.jpg" 
                 alt="Tom Ford avatar" 
                 width="264">
+                <div class="team-contaire">   
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
+                </div>
             
         </li>
         <li class="main-team-menu-item">
                 <img class="photo" src="./images/img3.jpg" 
                 alt="Camila Garcia avatar" 
                 width="264">
+                <div class="team-contaire">   
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-list-text">Marketing</p>
+                </div>
             
         </li>
         <li class="main-team-menu-item">
                 <img class="photo" src="./images/img4.jpg" 
                 alt="Daniel Wilson avatar" 
                 width="264">
+                <div class="team-contaire">     
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-list-text">UI Designer</p>
+                </div>
             
         </li>
     </ul>
+    </div>
     </section>
+   
+
 
     <section class="main-box-four">
+    <div class="container">   
     <h2 class="main-portfolio">Our Portfolio</h2>
     <ul class="main-portfolio-menu">
         <li class="main-portfolio-menu-item">
@@ -118,58 +145,73 @@
             alt="Banking avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">  
             <h3 class="portfolio-title">Banking App</h3>
+            
             <p class="portfolio-list-text">App</p>
+            </div>
         </li>
         <li class="main-portfolio-menu-item">
             <img class="page-portfolio" src="./images/img_row2.jpg" 
             alt="Cashless avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">
             <h3 class="portfolio-title">Cashless Payment</h3>
             <p class="portfolio-list-text">Marketing</p>
+            </div>
         </li>
         <li class="main-portfolio-menu-item">
             <img class="page-portfolio" src="./images/img_row3.jpg" 
             alt="Meditation avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">
             <h3 class="portfolio-title">Meditation App</h3>
             <p class="portfolio-list-text">App</p>
+            </div>
         </li>
         <li class="main-portfolio-menu-item">
             <img class="page-portfolio" src="./images/img_row4.jpg" 
             alt="Taxi avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">
             <h3 class="portfolio-title">Taxi Service</h3>
             <p class="portfolio-list-text">Marketing</p>
+            </div>
         </li>
         <li class="main-portfolio-menu-item">
             <img class="page-portfolio" src="./images/img_row5.jpg" 
             alt="Illustrations avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">
             <h3 class="portfolio-title">Screen Illustrations</h3>
             <p class="portfolio-list-text">Design</p>
+            </div>
         </li>
         <li class="main-portfolio-menu-item">
             <img class="page-portfolio" src="./images/img_row6.jpg" 
             alt="Courses avatar" 
             width="360"
             height="300">
+            <div class="info-portfolio">
             <h3 class="portfolio-title">Online Courses</h3>
             <p class="portfolio-list-text">Marketing</p>
+            </div>
         </li>
     </ul>
-    </section>
-    
+    </div>
+    </section>  
 </main>
 <footer class="page-footer">
+    <div class="container">
     <a  class="logo-footer" href="./index.html">WEB<span class="logo-footer-color">Studio</span></a>
     <p class="footer-list-text">Increase the flow of customers and 
             sales for your business with digital
             marketing & growth solutions.</p>
+    </div>
 </footer> 
 </body>
 </html>
