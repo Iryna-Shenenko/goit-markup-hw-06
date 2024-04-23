@@ -20,8 +20,12 @@ body {
 .page-header {
     border-bottom: 1px solid #e7e9fc
 }
-.page-header-nav {
+
+.container-header {
     display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .page-navigation {
     display: flex;
@@ -67,7 +71,7 @@ font-family: "Raleway", sans-serif;
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: block;
-    padding: 20px;
+    padding: 24px 0;
 }
 
 .navigation-menu-link:hover,
@@ -90,12 +94,10 @@ font-family: "Raleway", sans-serif;
 .page-address-menu-link:focus {
     color: #404bbf;
 }
-.page-header-address {
-display: flex;
-    gap: 40px;
-    align-items: center;
 
-}
+
+
+
 /* ======box-one========= */
 .main-box-one {
     background: #2e2f42;
