@@ -18,8 +18,10 @@ body {
 }
 /* ===== header===== */
 .page-header {
-    border-bottom: 1px solid #e7e9fc
-    box-shadow: 0px 2px 1px
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -62,11 +64,14 @@ font-family: "Raleway", sans-serif;
     padding: 24px 0;
     position: relative;
     color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
-.navigation-menu-item:active{
+.navigation-menu-link:active{
     color: #404bbf;
 }
-.navigation-menu-item.active::after {
+.navigation-menu-link.active::after {
     width: 100%;
     position: absolute;
     left: 0;
@@ -74,6 +79,7 @@ font-family: "Raleway", sans-serif;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    
 
 
 }
@@ -90,6 +96,8 @@ font-family: "Raleway", sans-serif;
     color: #2e2f42;
     display: block;
     padding: 24px 0;
+    position: relative;
+    color: #404bbf;
 }
 
 .navigation-menu-link:hover,
@@ -107,6 +115,7 @@ font-family: "Raleway", sans-serif;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .page-address-menu-link:hover,
 .page-address-menu-link:focus {
@@ -191,6 +200,18 @@ font-family: "Raleway", sans-serif;
 .main-fearte-menu-item {
     width: calc((100% - 72px) / 4);
 }
+.social-feater-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+     background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
+
+
 /* ==== box-three===== */
 .main-box-three {
     background: #f4f4fd;
@@ -241,11 +262,15 @@ font-family: "Raleway", sans-serif;
         color: #434455;
         text-align: center;
 }
-.team-contaire {
+.team-container {
     padding: 32px 0;
+
 }
 .social-team {
-    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
 }
 .social-team-menu {
     display: flex;
@@ -382,13 +407,14 @@ display: flex;
 .footer-container {
     display: flex;
     align-items: baseline;
+    margin-right: 120px;
 }
-.container-footer {
+.container-footer-logo {
     width: 1158px;
-    margin: 0 auto;
+    margin: auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 120px;
+    
 }
 .footer-title {
     font-weight: 500;
