@@ -446,18 +446,18 @@ padding: 100px 0;
     flex-wrap: wrap;
 }
 .social-footer-item {
-    width: 40%;
-    height: 40%;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40%;
+    height: 40%;
 }
 
-.ssocial-item:hover,
-.ssocial-item:focus {
+.social-item:hover,
+.social-item:focus {
     background-color: #31d0aa;
 }
 .social-item {
@@ -468,6 +468,7 @@ padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: У першому пункті списку соцмереж у посилання в класі заданий стиль transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1;
 
 }
 
