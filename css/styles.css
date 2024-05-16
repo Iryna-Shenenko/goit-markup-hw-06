@@ -507,7 +507,7 @@ padding: 100px 0;
     border: 1px solid #fff;
     font-size: 12px;
     line-height: 2;
-    letter-spacing: 0,04em;
+    letter-spacing: 0.04em
     border-radius: 4px;
     width: 264px;
     height: 40px;
@@ -629,7 +629,6 @@ ol {
     z-index: 999999;
     opacity: 0;
     visibility: hidden;
-    padding: 72px 24px 24px 24px;
     pointer-events: none;
     transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -652,6 +651,8 @@ ol {
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-close-button {
     position: absolute;
@@ -673,15 +674,15 @@ ol {
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
-    border: none;
-    background-color: #404bbf;
+     fill: #ffffff;
 }
 .model-close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .model-close-button-icons:hover,
 .model-close-button-icons:focus {
-    fill: #ffffff;
+    border: none;
+    background-color: #404bbf;
 }
 
 .modal-text {
@@ -747,6 +748,9 @@ ol {
 .form-input-modal:focus + .modal-form-icons {
     fill: #4D5AE5;
 }
+.modal-container-message {
+    margin-bottom: 16px;
+}
 .form-input-message {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
@@ -769,8 +773,9 @@ ol {
 .form-input-message::placeholder {
     font-size: 18px;
     letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
     line-height: 1.17;
+    color: rgba(64, 64, 64, 0.3);
+    
 } 
 .modal-checkbox-label {
         font-size: 12px;
@@ -796,7 +801,7 @@ ol {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-checkbox:checked + .modal-checkbox-label .form-checkbox-own {
+.form-checkbox:checked + .form-checkbox-own {
         fill: #f4f4fd;
         border-color: 1px solid #404bbf;
         background-color: #404bbf;
