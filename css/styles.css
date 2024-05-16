@@ -672,17 +672,17 @@ ol {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-button:hover,
+.modal-close-button:hover
 .modal-close-button:focus {
-     fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
 }
 .model-close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.model-close-button-icons:hover,
+.model-close-button-icons:hover
 .model-close-button-icons:focus {
-    border: none;
-    background-color: #404bbf;
+    fill: #ffffff
 }
 
 .modal-text {
@@ -752,9 +752,9 @@ ol {
     margin-bottom: 16px;
 }
 .form-input-message {
+        width: 100%;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-        width: 100%;
         height: 120px;
         font-size: 12px;
         line-height: 1.17;
@@ -768,6 +768,7 @@ ol {
 }
 .form-input-message:focus {
     border-color: #4d5ae5;
+
    
 }
 .form-input-message::placeholder {
@@ -781,6 +782,7 @@ ol {
         font-size: 12px;
         letter-spacing: 0.04em;
         color: #8e8f99;
+        line-height: 1.17;
 }
 .modal-checkbox {
     margin-bottom: 24px;
@@ -803,7 +805,6 @@ ol {
 }
 .form-checkbox:checked + .form-checkbox-own {
         fill: #f4f4fd;
-        border-color: 1px solid #404bbf;
         background-color: #404bbf;
         border: none;
 }
