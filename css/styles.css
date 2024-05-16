@@ -32,9 +32,7 @@ body {
 .page-navigation {
     display: flex;
     align-items: center;
-    unicode-bidi: isolate;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-        background: #fff;
+    
 }
 .page-logo {
 font-family: "Raleway", sans-serif;
@@ -61,7 +59,6 @@ font-family: "Raleway", sans-serif;
 }
 
 .navigation-menu-item {
-    padding: 24px 0;
     position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,17 +72,8 @@ font-family: "Raleway", sans-serif;
 .current {
 
 }
-.current::after {
-    content: "";
-width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-}
+
+
 .page-address-menu {
     display: flex;
     gap: 40px;
@@ -96,14 +84,22 @@ width: 100%;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     display: block;
     padding: 24px 0;
     position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
 .navigation-menu-link:hover,
 .navigation-menu-link:focus {
     color: #404bbf;
@@ -112,6 +108,10 @@ width: 100%;
     font-style: normal;
     font-size: normal;
         margin-left: auto;
+}
+.age-address-menu {
+    display: flex;
+    gap: 40px;
 }
 .page-address-menu-link {
         font-weight: 400;
@@ -271,6 +271,7 @@ width: 100%;
         text-align: center;
         color: #434455;
         text-align: center;
+        margin-bottom: 8px;
 }
 .team-container {
     padding: 32px 0;
@@ -419,7 +420,6 @@ padding: 100px 0;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
-        margin-bottom: 16px;
 }
 .social-footer {
     font-weight: 500;
@@ -431,14 +431,12 @@ padding: 100px 0;
 .footer-container {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
 }
 .container-footer-logo {
-    width: 1158px;
-    margin-right: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+    margin-right: 120px;  
+}
+.ontainer-social {
+    margin-right: 80px;
 }
 .footer-title {
     font-weight: 500;
@@ -479,13 +477,60 @@ padding: 100px 0;
     justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.container-social {
-    display: flex;
-    align-items: baseline;
-    margin-right: 120px;
+
 }
 
+.input-footer {
+  margin-left: 80px;
+
+}
+.input-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.form-footer {
+    display: flex;
+    width: 264px;
+        height: 40px;
+}
+
+.form-input-footer {
+    background-color: transparent; 
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 24px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input-footer::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+}
+
+.form-button-footer {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    color: #fff;
+    align-self: flex-start;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button-footer:hover { 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #404bbf;
+}
 
 
 /* ======= Cтилізація елементів====*/
@@ -554,7 +599,7 @@ ol {
     box-sizing: border-box;
 }
 
-.backdrop {
+/* .backdrop {
 width: 100%;
 height: 100%;
 background-color: #5e5f6b9e;
@@ -562,27 +607,91 @@ position: fixed;
 top: 0;
 left: 0;
 opacity: 0;
+
+ visibility: hidden;
+pointer-events: none;
+} */
+
+
+.backdrop {
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #5e5f6b9e;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
+
 .modal {
-    width: 300px;
-    height: 300px;
+    width: 408px;
+    min-height: 584px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #e7e9fc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fcfcfc;
 }
-.backdrop.is-open {
-    opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+.model-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0%;
+    border: none;
+    background-color: transparent;
+    stroke: #4d5ae5;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-   
+.modal-close-button:hover,
+.modal-close-button:focus {
+    stroke: #404bbf;
+}
+.modal-text {
+        max-width: 360px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 24px;
+}
+.from-modal {
+    
+}
+.modal-container {
+    margin-bottom: 16px;
+    padding: 24px;;
+    width: 360px;
+        height: 58px;
+}
+.form-label-modal {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        margin-bottom: 4px;
+}
 
-
-
-
-
- <div class="info-portfolio">
+.modal-container-input {
+    display: block;
+    width:100%;
+    height:58px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 62px;
+}
