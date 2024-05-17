@@ -676,7 +676,6 @@ ol {
 .modal-close-button:focus {
     background-color: #404bbf;
     border: none;
-    fill:#ffffff;
 
 }
 .modal-close-button-icons {
@@ -809,7 +808,7 @@ ol {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-checkbox:checked+.modal-checkbox-label > .form-checkbox-own {
-        fill: #F4F4FD
+        fill: #F4F4FD;
         background-color: #404bbf;
         border: none;
 }
