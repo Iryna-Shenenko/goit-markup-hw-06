@@ -677,13 +677,18 @@ ol {
     background-color: #404bbf;
     border: none;
 }
-.model-close-button-icon {
+.model-close-button-icons {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .model-close-button-icons:hover,
 .model-close-button-icons:focus {
     fill: #ffffff
+
+/* .modal-close-button:hover .model-close-button-icons,
+.modal-close-button:focus .model-close-button-icons {
+    fill: #ffffff; */
 }
+
 
 .modal-text {
         max-width: 360px;
@@ -750,6 +755,7 @@ ol {
 }
 .modal-container-message {
     margin-bottom: 16px;
+    width: 100%;
 }
 .form-input-message {
         width: 100%;
@@ -764,6 +770,7 @@ ol {
         resize: none;
         padding: 8px 16px;
         outline: transparent;
+        border-color: #4D5AE5;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input-message:focus {
@@ -803,7 +810,7 @@ ol {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-checkbox:checked+.modal-checkbox-label .form-checkbox-own {
+.form-checkbox-own:checked+.modal-checkbox-label {
         fill: #f4f4fd;
         background-color: #404bbf;
         border: none;
