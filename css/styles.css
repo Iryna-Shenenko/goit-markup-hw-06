@@ -754,8 +754,10 @@ ol {
 .modal-container-message {
     margin-bottom: 16px;
     width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .form-input-message {
+        border: 1px solid rgba(46, 47, 66, 0.4);
         width: 100%;
         border-radius: 4px;
         height: 120px;
@@ -763,7 +765,6 @@ ol {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
-        border: 1px solid rgba(46, 47, 66, 0.4);
         background-color: transparent;
         resize: none;
         padding: 8px 16px;
@@ -797,6 +798,7 @@ ol {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
     width: 16px;
     height: 16px;
