@@ -676,6 +676,7 @@ ol {
 .modal-close-button:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 
 }
 .modal-close-button-icons {
@@ -756,13 +757,13 @@ ol {
 }
 .form-input-message {
         width: 100%;
-        border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         height: 120px;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
+        border: 1px solid rgba(46, 47, 66, 0.4);
         background-color: transparent;
         resize: none;
         padding: 8px 16px;
