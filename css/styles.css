@@ -701,8 +701,7 @@ ol {
         text-align: center;
         color: #2e2f42;
         margin-bottom: 16px;
-        margin-top: 68px;
-        margin-left: 24px;
+ 
        
 }
 .from-modal {
@@ -821,7 +820,8 @@ ol {
         color: #4d5ae5;
 }
 .form-button-submit {
-    display: block;
+         display: block;
+         margin: 0 auto;
         border-radius: 6px;
         padding: 16px 32px;
         min-width: 169px;
