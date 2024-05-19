@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +16,11 @@
 </head>
 <body>
     <!-- Шапка веб-сторінки -->
- <header class="page-header">
+ <!-- <header class="page-header">
  <div class="container-header container">    
  <nav class="page-navigation">
     <a class="page-logo" href="./index.html">WEB<span class="text-color">Studio</span></a>
-    <ul class="navigation-menu">
+    <ul class="navigation-menu header-page-menu">
         <li class="navigation-menu-item">
         <a class="navigation-menu-link current" href="./index.html">Studio</a>
         </li>
@@ -45,10 +45,10 @@
     </ul>
  </address>
  </div>
- </header>
+ </header> -->
 
 <!-- ====HERO==== -->
-<main class="main-hero">
+<!-- <main class="main-hero">
     
     <section class="main-box-one">   
         <div class="container">     
@@ -56,11 +56,11 @@
             for Your Business</h1>
         <button class="order-service" type="button" data-modal-open>Order Service</button>
         </div>
-    </section>
+    </section> --> -->
 
 <!-- box-two -->
-     <section class="main-box-two">
-        <div class="container">    
+     <!-- <section class="main-box-two">
+        <div class="container fearte-container">    
         <h2 class="maim-fearte visually-hidden">Feature</h2>
         <ul class="main-fearte-menu">
             <li class="main-fearte-menu-item"> 
@@ -108,15 +108,15 @@
             </li>
         </ul>
         </div>
-    </section>
-<!-- box-three -->
+    </section> -->
+<!--box-three -->
  
     <section class="main-box-three"> 
         <div class="container">    
         <h2 class="main-team ">Our Team</h2>    
     <ul class="main-team-menu">
         <li class="main-team-menu-item">
-                    <img class="photo" src="./images/img1.jpg" 
+                    <img class="photo" srcset="./images/team/Team-1-min.jpg 1x, ./images/team/Team-1@2x-min.jpg 2x" src="./images/team/Team-1-min.jpg 1x" 
                     alt="Mark Guerrero avatar" 
                     width="264">
                     <div class="team-container">   
@@ -160,7 +160,7 @@
                    
         </li>
         <li class="main-team-menu-item">
-                <img class="photo" src="./images/img2.jpg" 
+                <img class="photo" srcset="./images/team/Team-2-min.jpg 1x, ./images/team/Team-2@2x-min.jpg 2x"  src="./images/team/Team-2-min.jpg" 
                 alt="Tom Ford avatar" 
                 width="264">  
                 <div class="team-container">
@@ -205,7 +205,7 @@
             
         </li>
         <li class="main-team-menu-item">
-                <img class="photo" src="./images/img3.jpg" 
+                <img class="photo" srcset="./images/team/Team-3-min.jpg 1x, ./images/team/Team-3@2x-min.jpg 2x" src="./images/team/Team-3-min.jpg" 
                 alt="Camila Garcia avatar" 
                 width="264"> 
                 <div class="team-container">
@@ -249,7 +249,7 @@
                 </div>
         </li>
         <li class="main-team-menu-item">
-                <img class="photo" src="./images/img4.jpg" 
+                <img class="photo" srcset="./images/team/Team-4-min.jpg 1x, ./images/team/Team-4@2x-min.jpg 2x" src="./images/team/Team-4-min.jpg " 
                 alt="Daniel Wilson avatar" 
                 width="264">   
                 <div class="team-container">
@@ -295,8 +295,6 @@
     </ul>
         </div>
     </section>
-   
-
 
     <section class="main-box-four"> 
         <div class="container">   
@@ -304,10 +302,29 @@
         <ul class="main-portfolio-menu">
             <li class="main-portfolio-menu-item">
                 <div class="container-portfolio">  
-                    <img class="page-portfolio" src="./images/img_row1.jpg" 
-                    alt="Banking avatar" 
-                    width="360"
-                    height="300">
+                    <picture>
+                        <source 
+                        media="(1158px)" 
+                        srcset="
+                        ./images/profolio/portfolio-desk-1-min.jpg 1x, 
+                        ./images/profolio/portfolio-desk-1@2x-min.jpg 2x" />
+
+                        <source media="(min-width: 768px)"
+                         srcset="
+                         ./images/profolio/portfolio-tabl-1-min.jpg 1x,
+                          ./images/profolio/portfolio-tabl-1@2x-min.jpg 2x"
+                         />
+
+                        <source media="(max-width: 768)" 
+                        srcset="
+                        ./images/profolio/portfolio-mobil-1-min.jpg 1x, 
+                        ./images/profolio/portfolio-mobil-1@2x-min.jpg 2x" />
+
+                        <img class="page-portfolio" src=" ./images/profolio/portfolio-desk-1-min.jpg" 
+                        alt="Banking avatar" 
+                        width="360"
+                        height="300">
+                    </picture>
                     <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App></p>
                 </div>
@@ -318,10 +335,27 @@
             </li>
                 <li class="main-portfolio-menu-item">
                     <div class="container-portfolio">
-                         <img class="page-portfolio" src="./images/img_row2.jpg" 
+                        <picture>
+                            <source media="(1158px)" 
+                            srcset="
+                            ./images/profolio/portfolio-desk-2-min.jpg 1x, 
+                            ./images/profolio/portfolio-desk-2@2x-min.jpg 2x" />
+                        
+                            <source media="(min-width: 768px)" 
+                            srcset="
+                            ./images/profolio/portfolio-tabl-2-min.jpg 1x,
+                            ./images/profolio/portfolio-tabl-2@2x-min.jpg 2x" />
+                        
+                            <source media="(max-width: 768)" 
+                            srcset="
+                            ./images/profolio/portfolio-mobil-2-min.jpg 1x, 
+                            ./images/profolio/portfolio-mobil-2@2x-min.jpg 2x" />
+
+                         <img class="page-portfolio" src="./images/profolio/portfolio-desk-2-min.jpg " 
                         alt="Cashless avatar" 
                          width="360"
                          height="300">
+                        </picture>
                          <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                              Cloud Storage App</p>
                     </div>
@@ -332,10 +366,27 @@
                  </li>
                     <li class="main-portfolio-menu-item">
                         <div class="container-portfolio">
-                            <img class="page-portfolio" src="./images/img_row3.jpg" 
+                            <picture>
+                                <source media="(1158px)" 
+                                srcset="
+                                ./images/profolio/portfolio-desk-3-min.jpg 1x, 
+                                ./images/profolio/portfolio-desk-3@2x-min.jpg 2x" />
+                            
+                                <source media="(min-width: 768px)" 
+                                srcset="
+                                ./images/profolio/portfolio-tabl-3-min.jpg 1x,
+                                ./images/profolio/portfolio-tabl-3@2x-min.jpg 2x" />
+                            
+                                <source media="(max-width: 768)" 
+                                srcset="
+                                ./images/profolio/portfolio-mobil-3-min.jpg 1x, 
+                                ./images/profolio/portfolio-mobil-3@2x-min.jpg 2x" />
+
+                            <img class="page-portfolio" src="./images/profolio/portfolio-desk-3-min.jpg" 
                             alt="Meditation avatar" 
                             width="360"
                             height="300">
+                            </picture>
                             <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
@@ -346,10 +397,27 @@
                     </li>
                     <li class="main-portfolio-menu-item">
                         <div class="container-portfolio">
-                            <img class="page-portfolio" src="./images/img_row4.jpg" 
+                            <picture>
+                                <source media="(1158px)" 
+                                srcset="
+                                ./images/profolio/portfolio-desk-4-min.jpg 1x, 
+                                ./images/profolio/portfolio-desk-4@2x-min.jpg 2x" />
+                            
+                                <source media="(min-width: 768px)" 
+                                srcset="
+                                ./images/profolio/portfolio-tabl-4-min.jpg 1x,
+                                ./images/profolio/portfolio-tabl-4@2x-min.jpg 2x" />
+                            
+                                <source media="(max-width: 768)" 
+                                srcset="
+                                ./images/profolio/portfolio-mobil-4-min.jpg 1x, 
+                                ./images/profolio/portfolio-mobil-4@2x-min.jpg 2x" />
+
+                            <img class="page-portfolio" src="./images/profolio/portfolio-desk-4-min.jpg" 
                              alt="Taxi avatar" 
                              width="360"
                             height="300">
+                            </picture>
                             <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
@@ -360,10 +428,27 @@
                     </li>
                     <li class="main-portfolio-menu-item">
                         <div class="container-portfolio">
-                            <img class="page-portfolio" src="./images/img_row5.jpg" 
+                            <picture>
+                                <source media="(1158px)"
+                                 srcset="
+                                ./images/profolio/portfolio-desk-5-min.jpg 1x, 
+                                ./images/profolio/portfolio-desk-5@2x-min.jpg 2x" />
+                            
+                                <source media="(min-width: 768px)"
+                                 srcset="
+                                ./images/profolio/portfolio-tabl-5-min.jpg 1x,
+                                ./images/profolio/portfolio-tabl-5@2x-min.jpg 2x" />
+                            
+                                <source media="(max-width: 768)" 
+                                srcset="
+                                ./images/profolio/portfolio-mobil-5-min.jpg 1x, 
+                                ./images/profolio/portfolio-mobil-5@2x-min.jpg 2x" />
+
+                            <img class="page-portfolio" src="./images/profolio/portfolio-desk-5-min.jpg" 
                             alt="Illustrations avatar" 
                             width="360"
                             height="300">
+                            </picture>
                             <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
@@ -374,10 +459,27 @@
                     </li>
                     <li class="main-portfolio-menu-item">
                         <div class="container-portfolio">
-                            <img class="page-portfolio" src="./images/img_row6.jpg" 
+                            <picture>
+                                <source media="(1158px)" 
+                                srcset="
+                                ./images/profolio/portfolio-desk-6-min.jpg 1x, 
+                                ./images/profolio/portfolio-desk-6@2x-min.jpg 2x" />
+                            
+                                <source media="(min-width: 768px)"
+                                 srcset="
+                                ./images/profolio/portfolio-tabl-6-min.jpg 1x,
+                                ./images/profolio/portfolio-tabl-6@2x-min.jpg 2x" />
+                            
+                                <source media="(max-width: 768)" 
+                                srcset="
+                                ./images/profolio/portfolio-mobil-6-min.jpg 1x, 
+                                ./images/profolio/portfolio-mobil-6@2x-min.jpg 2x" />
+
+                            <img class="page-portfolio" src="./images/profolio/portfolio-desk-6-min.jpg" 
                             alt="Courses avatar" 
                             width="360"
                             height="300">
+                            </picture>
                             <p class="portfolio-list-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                          </div>
@@ -389,7 +491,7 @@
              </ul>
         </div>
     </section>  
-</main>
+<!-- </main>
 <footer class="page-footer">
     <div class="footer-container container"> 
     <div class="container-footer-logo">
@@ -455,11 +557,11 @@
         </form>
     </div>
     </div>
-</footer> 
+</footer>  -->
 
 <!-- =========== backdrop==========-->
 
-<div class="backdrop" data-modal>
+<!-- <div class="backdrop" data-modal>
     <div class="modal">
         <button  class="modal-close-button" type="button">
             <svg class="modal-close-button-icons" width="8" height="8">
@@ -552,4 +654,4 @@
  <script src="./js/modal.js" type="module"></script> 
 
 </body>
-</html>
+</html> --> -->
