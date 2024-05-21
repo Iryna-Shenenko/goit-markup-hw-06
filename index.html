@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,9 @@
 </head>
 <body>
     <!-- Шапка веб-сторінки -->
- <!-- <header class="page-header">
- <div class="container-header container">    
+ <header class="page-header">
+     <div class="mobil-menun is-open">    
+     <div class="container-header container">    
  <nav class="page-navigation">
     <a class="page-logo" href="./index.html">WEB<span class="text-color">Studio</span></a>
     <ul class="navigation-menu header-page-menu">
@@ -32,7 +33,11 @@
         </li>
     </ul>
  </nav>
-        
+  <button class="mobil-open-button" type="button">
+    <svg class="mobil-open-button-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+    </svg>
+  </button>      
      
  <address class="page-address">
     <ul class="page-address-menu">
@@ -44,23 +49,24 @@
         </li>
     </ul>
  </address>
- </div>
- </header> -->
+    </div>
+     </div>
+ </header> 
 
 <!-- ====HERO==== -->
-<!-- <main class="main-hero">
+<main class="main-hero">
     
     <section class="main-box-one">   
-        <div class="container">     
+        <div class="container-hero container">     
         <h1 class="main-title">Effective Solutions 
             for Your Business</h1>
         <button class="order-service" type="button" data-modal-open>Order Service</button>
         </div>
-    </section> --> -->
+    </section> 
 
 <!-- box-two -->
-     <!-- <section class="main-box-two">
-        <div class="container fearte-container">    
+        <section class="main-box-two">
+        <div class="featre-container container">    
         <h2 class="maim-fearte visually-hidden">Feature</h2>
         <ul class="main-fearte-menu">
             <li class="main-fearte-menu-item"> 
@@ -108,11 +114,11 @@
             </li>
         </ul>
         </div>
-    </section> -->
+    </section> 
 <!--box-three -->
  
     <section class="main-box-three"> 
-        <div class="container">    
+        <div class="container-team container">    
         <h2 class="main-team ">Our Team</h2>    
     <ul class="main-team-menu">
         <li class="main-team-menu-item">
@@ -297,7 +303,7 @@
     </section>
 
     <section class="main-box-four"> 
-        <div class="container">   
+        <div class="portfolio-container container">   
         <h2 class="main-portfolio">Our Portfolio</h2>
         <ul class="main-portfolio-menu">
             <li class="main-portfolio-menu-item">
@@ -490,8 +496,8 @@
                     </li>
              </ul>
         </div>
-    </section>  
-<!-- </main>
+    </section> 
+</main>
 <footer class="page-footer">
     <div class="footer-container container"> 
     <div class="container-footer-logo">
@@ -557,11 +563,11 @@
         </form>
     </div>
     </div>
-</footer>  -->
+</footer> 
 
 <!-- =========== backdrop==========-->
 
-<!-- <div class="backdrop" data-modal>
+<div class="backdrop" data-modal>
     <div class="modal">
         <button  class="modal-close-button" type="button">
             <svg class="modal-close-button-icons" width="8" height="8">
@@ -652,6 +658,76 @@
     </div>
 </div>
  <script src="./js/modal.js" type="module"></script> 
+<!-- Mobile menu -->
+<div class="mobile-menu">   
+    <div class="container mobil-menu-container">
+        <button class="mobile-menu-close-btn">
+            <svg class="mobile-menu-close-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+    <nav class="page-navigation-mobil">
+        <a class="page-logo-mobil" href="./index.html">WEB<span class="text-color">Studio</span></a>
+        <ul class="navigation-menu-mobil header-page-menu">
+            <li class="navigation-menu-item-mobil">
+                <a class="navigation-menu-link-studio current" href="./index.html">Studio</a>
+            </li>
+            <li class="navigation-menu-item">
+                <a class="navigation-menu-link-mobil" href="">Portfolio</a>
+            </li>
+            <li class="navigation-menu-item">
+                <a class="navigation-menu-link" href="">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <address class="page-address-mobil">
+        <ul class="page-address-menu">
+            <li class="page-address-menu-item">
+                <a class="page-address-menu-link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="page-address-menu-item">
+                <a class="page-address-menu-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+    </address>
+<div class="container-social">
+    <p class="mobil-title"></p>
+    <ul class="social-mobil-menu">
+        <li class="social-mobil-item">
+            <a href="" class="social-item">
+                <svg class="social-mobil-icons" width="24" height="24" fill="#f4f4fd">
+                    <use href="./images/icons.svg#icon-instagram-2">
+                    </use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-mobil-item">
+            <a href="" class="social-item">
+                <svg class="social-fmobil-icons" width="24" height="24" fill="#f4f4fd">
+                    <use href="./images/icons.svg#icon-twitter-1">
+                    </use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-mobil-item">
+            <a href="" class="social-item">
+                <svg class="social-mobil-icons" width="24" height="24" fill="#f4f4fd">
+                    <use href="./images/icons.svg#icon-facebook-1">
+                    </use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-mobil-item">
+            <a href="" class="social-item">
+                <svg class="social-mobil-icons" width="24" height="24" fill="#f4f4fd">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
 
 </body>
-</html> --> -->
+</html> 
